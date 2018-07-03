@@ -9,10 +9,10 @@
 		}
 
 		.bg {
-   	 		background-image: url("Pics/p2.png");
+   	 		background-image: url("Pics/p4.png");
 
    			height: 100%; 
-   		    	
+   		    position: relative;	
     		background-position: center;
     		background-repeat: no-repeat;
     		background-size: cover;
@@ -60,7 +60,17 @@
 			height: 30px;
 		}
 
-
+		.text-block {
+    		position: absolute;
+    		
+    		background: rgba(0, 0, 0, 0.5);
+    		color: white;
+    		padding-left: 20px;
+    		padding-right: 20px;
+    		width: 97%;
+    		font-size: 21;
+    		
+		}
 
 		</style>
 		<title>PUBG MOBILE FAN PAGE</title>
@@ -85,11 +95,33 @@
 		</div>
 
 		<div class="bg" >
-			<div id="Home" >
-				<h3 id="para2">Join Us</h3> oin us pageLondon is the capital city of England.</p> </div>
+			<div class="text-block">
+				<h1>Join Us</h1>
+				<p>
+					Fill the form below and get invited to our squad.
+				</p>
+				<form action="mailto:achinthpr1999@gmail.com" method="post" enctype="text/plain">
+					PUBG Mobile User Name:<br>
+					<input type="text" name="name"><br>
+					E-mail:<br>
+					<input type="text" name="mail"><br>
+					League:<br>
+					<input list="leag" name="leag">
+  						<datalist id="leag">
+    						<option value="Bronze 1-5">
+    						<option value="Silver 1-5">
+    						<option value="Gold 1-5">
+    						<option value="Platinum 1-5">
+    						<option value="Diamond 1-5">
+    						<option value="Crown 1-5">
+    						<option value="Ace">
+    						<option value="God of War">
+  						</datalist>
 
-			
-
+					<input type="submit" value="Send">
+					<input type="reset" value="Reset">
+				</form>
+			</div>
 		</div>
 		<p id="para3">Created by DRC</p>
 	</body>
