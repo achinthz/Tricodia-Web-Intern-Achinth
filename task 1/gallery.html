@@ -1,0 +1,248 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+		 body, html {
+    	height: 100%;
+    	margin: 0;
+
+		}
+		#para1{text-align:center;
+			background:rgb(28, 24, 20);
+			margin: 0}
+			#para2{
+		 	
+		 	margin: 0 ;
+		}
+
+		.tab{
+			background-color: black;
+			overflow: hidden;
+		}
+		.tab a {
+	    	float: left;
+  			color: #f2f2f2;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+  			font-size: 17px;
+		}
+		.tab a:hover {
+		    background-color: #232933;
+		}
+		.tab a.active {
+    		background-color: #3f2121;
+		}
+		.tab-right {
+  			float: right;
+		}
+
+
+		* {
+  			box-sizing: border-box;
+		}
+
+		img {
+  		vertical-align: middle;
+		}
+
+
+		.container {
+  			position: relative;
+		}		
+
+		.mySlides {
+ 			 display: none;
+		}
+
+
+		.cursor {
+			cursor: pointer;
+		}
+
+		.prev,
+		.next {
+  			cursor: pointer;
+  			position: absolute;
+  			top: 40%;
+  			width: auto;
+  			padding: 16px;
+  			margin-top: -50px;
+  			color: white;
+  			font-weight: bold;
+  			font-size: 20px;
+  			border-radius: 0 3px 3px 0;
+  			user-select: none;
+  			-webkit-user-select: none;
+		}
+
+		.next {
+  			right: 0;
+  			border-radius: 3px 0 0 3px;
+		}
+
+		.prev:hover,
+		.next:hover {
+  			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		.numbertext {
+  			color: #f2f2f2;
+  			font-size: 12px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			top: 0;
+		}
+
+
+		.caption-container {
+  			text-align: center;
+  			background-color: #222;
+  			padding: 2px 16px;
+  			color: white;
+		}
+
+		.row:after {
+			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+
+		.column {
+			float: left;
+  			width: 16.66%;
+		}
+
+
+		.demo {
+ 			opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+  			opacity: 1;
+		}
+
+		#para3{
+			background-color: black;
+			color:white;
+			padding: 15px;
+			text-align: center;
+			font-size: 25;
+			margin: 0;
+			height: 30px;
+		}
+
+		</style>
+	</head>
+	<body>
+		<p id="para1" >
+			<img src="Pics\logo.png" width="341.5" height="133">
+		</p>
+		<div class="tab">
+			<p id="para2">
+			<a href="index.html">Home</a>
+			<a class="active" href="gallery.html">Gallery</a>
+  			<a href="download.html">Downloads</a>
+  			<a href="join.html">Join Us</a>
+  			
+  			<div class="tab-right">
+    			<a href="about.html">About Us</a>
+    		</div>
+    	</p>
+		</div>
+
+
+		<div class="container">
+  			<div class="mySlides">
+    			<div class="numbertext">1 / 6</div>
+    			<img src="Pics\main2.jpg" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">2 / 6</div>
+    			<img src="Pics\p1.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">3 / 6</div>
+    			<img src="Pics\p2.png" style="width:100%">
+  			</div>
+    
+  			<div class="mySlides">
+    			<div class="numbertext">4 / 6</div>
+    			<img src="Pics\g1.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">5 / 6</div>
+    			<img src="Pics\g2.png" style="width:100%">
+  			</div>
+    
+  			<div class="mySlides">
+    			<div class="numbertext">6 / 6</div>
+    			<img src="Pics\p5.png" style="width:100%">
+  			</div>
+    
+  			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+
+  			<div class="caption-container">
+    			<p id="caption"></p>
+  			</div>
+
+  			<div class="row">
+    			<div class="column">
+      				<img class="demo cursor" src="Pics\main2.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Game">
+    			</div>
+    			<div class="column">
+      				<img class="demo cursor" src="Pics\p1.png" style="width:100%" onclick="currentSlide(2)" alt="Loading Page-1">
+    			</div>
+    			<div class="column">
+      				<img class="demo cursor" src="Pics\p2.png" style="width:100%" onclick="currentSlide(3)" alt="Loading Page-2">
+    			</div>
+    			<div class="column">
+      				<img class="demo cursor" src="Pics\g1.png" style="width:100%" onclick="currentSlide(4)" alt="Winner Winner Chicken Dinner">
+    			</div>
+    			<div class="column">
+      				<img class="demo cursor" src="Pics\g2.png" style="width:100%" onclick="currentSlide(5)" alt="Winner Winner Chicken Dinner">
+    			</div>    
+    			<div class="column">
+      				<img class="demo cursor" src="Pics\p5.png" style="width:100%" onclick="currentSlide(6)" alt="Our Team">
+    			</div>
+  			</div>
+		</div>
+		<p id="para3">Created by DRC</p>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+  				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+  				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("demo");
+  				var captionText = document.getElementById("caption");
+  				if (n > slides.length) {slideIndex = 1}
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";
+  				dots[slideIndex-1].className += " active";
+  				captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+	</body>
+</html>
