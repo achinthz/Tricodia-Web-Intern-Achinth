@@ -1,0 +1,13 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="chara.css">
+</head>
+<body>
+<h1><big><i><b></b></i></big></h1>
+<h2><big><i></i></big></h1>
+<hr>
+<hr>
+<p><img src="" class= "img"></p>
+<br><br>
+<p><b>

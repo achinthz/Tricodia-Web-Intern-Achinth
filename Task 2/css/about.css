@@ -1,0 +1,49 @@
+
+.bg {
+        background-image: url("Pics/pic2.jpg");
+        height: 100%; 
+        position: relative; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  
+  padding: 0 8px;
+  
+  margin: 25px;
+
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(193, 240, 246, 0.85);
+  text-align: center;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+#para{
+	text-align:center;
+}

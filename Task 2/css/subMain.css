@@ -1,0 +1,33 @@
+h2 {
+    color: red;
+    margin-left: 20px;
+}
+.bg {
+   	 		background-image: url("Pics/pic4.jpg");
+   			height: 100%; 
+   		    position: relative;	
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+    		margin: 0;
+  }
+
+.text-block {
+    		position: absolute;
+    		background: rgba(193, 240, 246, 0.85);
+    		color: black;
+    		padding-left: 20px;
+    		padding-right: 20px;
+    		width: 62%;
+    		font-size: 30;
+    		left: 35%;
+    		font-weight: bold;
+    		top: 15px;
+}
+
+#para2{
+	color: black;
+	font-weight: normal;
+	font-size: 21;
+
+}

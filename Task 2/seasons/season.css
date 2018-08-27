@@ -1,0 +1,81 @@
+body{
+background-color: rgb(50,50,50);
+margin: 0;
+}
+img{display: block;	border-radius: 2%;	opacity: 1; 	margin-left: auto;		margin-right: auto;		max width: 100%;	height: auto;}
+
+h1{color: #FAEBD7;		text-align: center;		text-shadow: 1px;		font-style:italic		font-size:400%;		font-family: "Lucida Console";}
+p{color: #FFFFFF;	text-align: justify;	margin: 10;	font-style: oblique;		font-size: 130%;		font-family: "Times New Roman", Times, serif;}
+.tab{
+	background-color: black;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0 0px;
+	}
+.tab a {
+   	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.tab a:hover ,.dropdown:hover .dropbtn{
+    background-color: #232933;
+}
+.tab a.active {
+	background-color: #3f2121;
+}
+.tab-right {
+	float: right;
+}
+
+.dropdown{
+	display: inline;
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    background-color: #3f2121;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #232933;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+#para1{
+	text-align:center;
+	background-image: url('fire.jpg');
+	background-size: cover;
+	
+	margin: 0;
+	
+	padding: 10px 10px;
+}

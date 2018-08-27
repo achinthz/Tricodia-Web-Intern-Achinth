@@ -1,0 +1,9 @@
+P R Achinth
+Amarnath K
+
+Nice job!
+Choose a good color theme.
+Use good fonts which are available online.
+Reduce the text content in the pages.If large text is present, give it a good font and display it using good fonts.
+Try to give border for the boxes and divs.
+Nice job on gallery. Scale the images to same size using photoshop before including them in the gallery.

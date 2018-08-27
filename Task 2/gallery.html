@@ -1,0 +1,164 @@
+﻿<html>
+	<head>
+		<style type="text/css">
+		
+
+		</style>
+		
+<title>gallery</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="gallery/gallery.css">
+	</head>
+
+	<body>
+		<p id="para1" >
+			<img src="gallery\logo2.png" max width="90%" height="auto">
+		</p>
+		<div class="tab">
+			<p id="para2">
+			<a href="index.html">Home</a>
+			
+  			
+  			<div class="dropdown">
+    			<button class="dropbtn">Seasons
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="seasons/season 1.html">Season 1</a>
+      				
+			<a href="seasons/season 2.html">Season 2</a>
+      				
+			<a href="seasons/season 3.html">Season 3</a>
+      				
+			<a href="seasons/season 4.html">Season 4</a>
+      				
+			<a href="seasons/season 5.html">Season 5</a>
+      				
+			<a href="seasons/season 6.html">Season 6</a>
+      				
+			<a href="seasons/season 7.html">Season 7</a>
+      
+    			</div>
+
+  </div>						
+      <a href="characters.html">Characters</a>
+
+          <a class="active" href="gallery.html">Gallery</a>
+ 			<div class="tab-right">
+    			<a href="about.html">About Us</a>
+    		</div>
+
+  	</p>
+		</div>
+
+
+		<div class="container">
+  			<div class="mySlides">
+    			<div class="numbertext">1 / 9</div>
+    			<img src="gallery\1.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">2 / 9</div>
+    			<img src="gallery\2.jpg" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    	<div class="numbertext">3 / 9</div>
+    	<img src="gallery\3.png" style="width:100%">
+  		</div>
+    
+  		
+    						<div class="mySlides">
+    			<div class="numbertext">6 / 9</div>
+    			<img src="gallery\6.png" style="width:100%">
+  			</div>
+ <div class="mySlides">
+    	<div class="numbertext">7 / 9</div>
+    	<img src="gallery\7.jpg" style="width:100%">
+  		</div>   
+<div class="mySlides">
+    	<div class="numbertext">8 / 9</div>
+    	<img src="gallery\8.jpg" style="width:100%">
+  		</div>  	<div class="mySlides">
+    	<div class="numbertext">9 / 9</div>
+    	<img src="gallery\9.png" style="width:100%">
+  		</div>    	<div class="mySlides">
+    	<div class="numbertext">8 / 9</div>
+    	<img src="gallery\11.png" style="width:100%">
+  		</div>	<div class="mySlides">
+    	<div class="numbertext">9 / 9</div>
+    	<img src="gallery\12.png" style="width:100%">
+  		</div>	<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+
+  			<div class="caption-container">
+    			<p id="caption"></p>
+  			</div>
+
+  			<div class="row">
+    			<div class="column">
+      				<img class="demo cursor" src="gallery\1.png" style="width:100%" onclick="currentSlide(1)" >
+    			</div>
+    <div class="column">
+      <img class="demo cursor" src="gallery\2.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    			<div class="column">
+      				<img class="demo cursor" src="gallery\3.png" style="width:100%" onclick="currentSlide(3)" >
+    			</div>
+    			 
+    			<div class="column">
+      				<img class="demo cursor" src="gallery\6.png" style="width:100%" onclick="currentSlide(4)" >
+    			</div>
+  	<div class="column">
+      <img class="demo cursor" src="gallery\7.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="gallery\8.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>
+		<div class="column">
+      <img class="demo cursor" src="gallery\9.png" style="width:100%" onclick="currentSlide(7)">
+    </div>
+
+	<div class="column">
+      <img class="demo cursor" src="gallery\11.png" style="width:100%" onclick="currentSlide(8)">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="gallery\12.png" style="width:100%" onclick="currentSlide(9)">
+    </div>
+	</div>
+		</div>
+		<p id="para3"></p>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+  				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+  				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("demo");
+  				var captionText = document.getElementById("caption");
+  				if (n > slides.length) {slideIndex = 1}
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";
+  				dots[slideIndex-1].className += " active";
+  				captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+	</body>
+</html>

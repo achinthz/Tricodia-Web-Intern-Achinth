@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>season </title>
+<link rel="stylesheet" type="text/css" href="season.css">
+</head>
+<body>
+<h1><big><i><u></u></i></big></h1>
+<p><img src="s.png" class="img"></p>
+<p></p>
+<p><img src="s.png" class="img"></p>
+
+  <p></p>
+</body>
+</html>
